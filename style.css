@@ -1,0 +1,23 @@
+body{
+    margin-top: 0px;
+    background-color: rgb(236, 232, 232);
+    font-family: "Kanit", sans-serif;
+}
+/* Style for the grid container */
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr); /* 16 columns */
+    grid-template-rows: repeat(16, 1fr); /* 16 rows */
+    gap: 0px; /* Gap between divs */
+    border: 2px solid black;/* Border for visualization */
+    
+}
+
+/* Style for the square divs */
+.grid-item {
+    background-color: #ccc; /* Default background color */
+    border: 10px solid white; /* Border around each square */
+    width: 100%; /* Adjusting width to fit in the grid */
+    height: 100%; /* Adjusting height to fit in the grid */
+    
+}
