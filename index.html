@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch-a-Sketch</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css" />
     <script src="/script.js" defer></script>
-</head>
-<body>
-    <h1>Etch-a-Sketch</h1>
+  </head>
+  <body>
+    <div class="header"><h1>Etch-a-Sketch</h1></div>
     <div id="wholeBody">
-        <div id="grid-container">
+      <div class="left-side"><div id="grid-container"></div></div>
+      <div class="right-side">
+        <div class="input-container">
+          <div class="input-text">
+            <h3>Enter the number of grid you would like to have.</h3>
+          </div>
+          <div class="input-field">
+            <input
+              type="number"
+              id="gridSizeInput"
+              placeholder="Enter a number"
+              min="1"
+              max="100"
+            />
+            <button id="enterButton">Enter</button>
+          </div>
+          
+          
         </div>
-        <div id="button"></div>
+        <div class="instruction">
+            <h3>Hold control key(ctrl) to sketch!</h3>
+          </div>
+        <div id="resetbtn"></div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
